@@ -32,14 +32,18 @@ header h1 {
 
 main{
     margin-top: 50px;
+    display: flex;
+}
+
+.controls-area{
+    width: 30vw;
 }
 
 /* Grid Styles */
 #play-grid{
-    height: 700px;
-    width: 700px;
+    width: 40vw;
     aspect-ratio: 1/1;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0,0,0,0.5);
@@ -48,6 +52,17 @@ main{
     -khtml-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
+}
+
+@media screen and (max-width: 769px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    #play-grid{
+        margin-top: 20px;
+        width: 80vw;
+    }
 }
 
 .play-grid-row{
@@ -66,6 +81,8 @@ main{
 .play-grid-cell{
     aspect-ratio: 1/1;
     border: .5px solid rgba(0,0,0,0.2);
+    display: flex;
+    flex-grow: 1;
     user-select: none;
     -moz-user-select: none;
     -khtml-user-select: none;

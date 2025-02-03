@@ -43,6 +43,11 @@ main{
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(0,0,0,0.5);
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
 .play-grid-row{
@@ -51,9 +56,23 @@ main{
     flex-direction: row;
     justify-content: space-evenly;
     flex-grow: 1;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
 .play-grid-cell{
     aspect-ratio: 1/1;
     border: .5px solid rgba(0,0,0,0.2);
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+.play-grid-cell:hover{
+    background-color: rgba(0,0,0,0.25);
 }

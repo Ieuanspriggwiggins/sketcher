@@ -29,3 +29,29 @@ header h1 {
     font-weight: bold;
     letter-spacing: 10px;
 }
+
+main{
+    margin-top: 100px;
+}
+
+/* Grid Styles */
+#play-grid{
+    height: 500px;
+    width: 500px;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.play-grid-row{
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+
+.play-grid-cell{
+    aspect-ratio: 1/1;
+}

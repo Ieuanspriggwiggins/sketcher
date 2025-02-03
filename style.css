@@ -36,8 +36,8 @@ main{
 
 /* Grid Styles */
 #play-grid{
-    height: 800px;
-    width: 800px;
+    height: 700px;
+    width: 700px;
     aspect-ratio: 1/1;
     margin: 0 auto;
     display: flex;

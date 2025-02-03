@@ -4,6 +4,10 @@ const gridArea = document.getElementById("play-grid");
 //Values for grid
 let gridSize = 64;
 
+/**
+ * Generates a grid from the gridsize specified.
+ * grid is separated into rows of cells.
+ */
 function generateGridArea() {
     gridArea.innerHTML = ""; // Empty the HTML grid before generating it
     for(let i = 0; i < gridSize; i++){
@@ -17,3 +21,6 @@ function generateGridArea() {
         gridArea.appendChild(gridRow);
     }
 }
+
+//Run generate grid to initialize the grid
+generateGridArea();

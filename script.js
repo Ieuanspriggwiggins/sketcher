@@ -24,15 +24,29 @@ function generateGridArea() {
     }
 }
 
+/**
+ * Listener for when the mouse is over a cell. Will only change the cell state if the mouse button is being pressed.
+ * @param {Event} event 
+ */
 function onCellMouseOver(event) {
     if(event.buttons){
-        const cell = event.target;
-        cell.style.backgroundColor = "black";
+        drawCell(event.target);
     }
 }
 
+/**
+ * Listener function for when a cell is clicked, this avoids issues with the event not firing if clicking after entering a cell with mouseover.
+ * @param {Event} event 
+ */
 function onCellClick(event) {
-    const cell = event.target;
+    drawCell(event.target);
+}
+
+/**
+ * Updates the colour of a cell.
+ * @param {*} cell 
+ */
+function drawCell(cell){
     cell.style.backgroundColor = "black";
 }
 

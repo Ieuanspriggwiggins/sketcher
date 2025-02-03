@@ -31,17 +31,18 @@ header h1 {
 }
 
 main{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 /* Grid Styles */
 #play-grid{
-    height: 500px;
-    width: 500px;
+    height: 800px;
+    width: 800px;
     aspect-ratio: 1/1;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    border: 1px solid rgba(0,0,0,0.5);
 }
 
 .play-grid-row{
@@ -54,4 +55,5 @@ main{
 
 .play-grid-cell{
     aspect-ratio: 1/1;
+    border: .5px solid rgba(0,0,0,0.2);
 }

@@ -35,6 +35,21 @@ main{
     display: flex;
 }
 
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.contained{
+    width: 95%;
+    margin: 20px auto;
+}
+
 .controls-area{
     width: 30vw;
 }

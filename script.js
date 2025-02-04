@@ -4,6 +4,12 @@ const gridArea = document.getElementById("play-grid");
 //Values for grid
 let gridSize = 32;
 
+//Control buttons
+const clearGridBtn = document.getElementById("grid-clear-btn");
+
+//event listeners for controls
+clearGridBtn.addEventListener("click", generateGridArea);
+
 /**
  * Generates a grid from the gridsize specified.
  * grid is separated into rows of cells.

@@ -43,16 +43,21 @@ main{
 .flex-row{
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .contained{
-    width: 95%;
+    width: 80%;
     margin: 20px auto;
 }
 
 .controls-area{
     width: 30vw;
+}
+
+@media screen and (max-width: 769px){
+    .controls-area{
+        width: 100%;
+    }
 }
 
 /* Grid Styles */
@@ -126,4 +131,18 @@ span.controls-row-title{
     font-size: 18px;
     text-align: center;
     padding-bottom: 10px;
+}
+
+.control-btn{
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.control-btn:hover{
+    background-color: var(--blue);
 }

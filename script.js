@@ -10,10 +10,10 @@ let gridSize = 32;
  */
 function generateGridArea() {
     gridArea.innerHTML = ""; // Empty the HTML grid before generating it
-    for(let i = 0; i < gridSize; i++){
+    for (let i = 0; i < gridSize; i++) {
         const gridRow = document.createElement("div");
         gridRow.classList.add("play-grid-row");
-        for(let j = 0; j < gridSize; j++){
+        for (let j = 0; j < gridSize; j++) {
             const gridCell = document.createElement("div");
             gridCell.classList.add("play-grid-cell");
             gridCell.addEventListener("mouseover", onCellMouseOver);
@@ -26,17 +26,17 @@ function generateGridArea() {
 
 /**
  * Listener for when the mouse is over a cell. Will only change the cell state if the mouse button is being pressed.
- * @param {Event} event 
+ * @param {Event} event
  */
 function onCellMouseOver(event) {
-    if(event.buttons){
+    if (event.buttons) {
         drawCell(event.target);
     }
 }
 
 /**
  * Listener function for when a cell is clicked, this avoids issues with the event not firing if clicking after entering a cell with mouseover.
- * @param {Event} event 
+ * @param {Event} event
  */
 function onCellClick(event) {
     drawCell(event.target);
@@ -44,9 +44,9 @@ function onCellClick(event) {
 
 /**
  * Updates the colour of a cell.
- * @param {*} cell 
+ * @param {*} cell
  */
-function drawCell(cell){
+function drawCell(cell) {
     cell.style.backgroundColor = "black";
 }
 

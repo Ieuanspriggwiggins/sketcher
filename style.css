@@ -143,6 +143,12 @@ span.controls-row-title{
     text-transform: uppercase;
 }
 
+.label-input-pair{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
 .control-btn:hover{
     background-color: var(--blue);
 }

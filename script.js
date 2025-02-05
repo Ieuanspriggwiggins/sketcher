@@ -6,9 +6,11 @@ let gridSize = 32;
 
 //Control buttons
 const clearGridBtn = document.getElementById("grid-clear-btn");
+const showGridBtn = document.getElementById("grid-show-btn");
 
 //event listeners for controls
 clearGridBtn.addEventListener("click", generateGridArea);
+showGridBtn.addEventListener("change", showGridToggle)
 
 /**
  * Generates a grid from the gridsize specified.
@@ -28,6 +30,10 @@ function generateGridArea() {
         }
         gridArea.appendChild(gridRow);
     }
+}
+
+function showGridToggle(event) {
+    
 }
 
 /**

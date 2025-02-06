@@ -149,6 +149,12 @@ span.controls-row-title{
     margin: 0 20px;
 }
 
+.grid-control-slider{
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+}
+
 .control-btn:hover{
     background-color: var(--blue);
 }

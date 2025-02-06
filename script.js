@@ -1,16 +1,17 @@
-// Constants
+// Grid and detail displays
 const gridArea = document.getElementById("play-grid");
+const gridSizeDisplay = document.getElementById("grid-size-display");
 
 //Values for grid
 let gridSize = 32;
 
-//Control buttons
+//Control buttons and inputs
 const clearGridBtn = document.getElementById("grid-clear-btn");
 const showGridBtn = document.getElementById("grid-show-btn");
 
 //event listeners for controls
 clearGridBtn.addEventListener("click", generateGridArea);
-showGridBtn.addEventListener("change", showGridToggle)
+showGridBtn.addEventListener("change", showGridToggle);
 
 /**
  * Generates a grid from the gridsize specified.
@@ -30,10 +31,24 @@ function generateGridArea() {
         }
         gridArea.appendChild(gridRow);
     }
+    updateGridSizeDisplay();
 }
 
 function showGridToggle(event) {
     
+}
+
+function updateGridSizeOnSliderChange(element) {
+    const newSize = element.value;
+    gridSize = newSize;
+    generateGridArea();
+}
+
+/**
+ * Updates the grid size display element with the current size.
+ */
+function updateGridSizeDisplay(){
+    gridSizeDisplay.innerText = `${gridSize}x${gridSize}`;
 }
 
 /**

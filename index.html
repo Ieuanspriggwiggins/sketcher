@@ -25,6 +25,18 @@
                         <input type="checkbox" name="grid-show" id="grid-show-btn" checked>
                     </div>
                 </div>
+
+                <div class="controls-row">
+                    <span class="controls-row-title">Grid Controls</span>
+                </div>
+                <div class="flex-row contained">
+                    <div class="grid-control-slider">
+                        <label for="grid-size-slider">
+                            Grid Size: <span id="grid-size-display"></span>
+                        </label>
+                        <input oninput="updateGridSizeOnSliderChange(this)" type="range" name="grid-size-slider" id="grid-size-slider" min="16" max="64" value="32">
+                    </div>
+                </div>
             </div>
         </div>
         <div id="play-grid">

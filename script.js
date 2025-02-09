@@ -25,6 +25,7 @@ function generateGridArea() {
         for (let j = 0; j < gridSize; j++) {
             const gridCell = document.createElement("div");
             gridCell.classList.add("play-grid-cell");
+            gridCell.classList.add("play-grid-cell-outlined");
             gridCell.addEventListener("mouseover", onCellMouseOver);
             gridCell.addEventListener("mousedown", onCellClick);
             gridRow.appendChild(gridCell);
@@ -34,10 +35,23 @@ function generateGridArea() {
     updateGridSizeDisplay();
 }
 
+/**
+ * Toggles the grid lines.
+ * @param {*} event 
+ */
 function showGridToggle(event) {
+    const gridCells = document.querySelectorAll(".play-grid-cell");
+    
+    for(let i = 0; i < gridCells.length; i++){
+        gridCells[i].classList.toggle("play-grid-cell-outlined");
+    }
     
 }
 
+/**
+ * Updates the grid size from the slider
+ * @param {*} element 
+ */
 function updateGridSizeOnSliderChange(element) {
     const newSize = element.value;
     gridSize = newSize;

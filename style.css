@@ -101,7 +101,6 @@ main{
 
 .play-grid-cell{
     aspect-ratio: 1/1;
-    border: .5px solid rgba(0,0,0,0.2);
     display: flex;
     flex-grow: 1;
     user-select: none;
@@ -109,6 +108,10 @@ main{
     -khtml-user-select: none;
     -webkit-user-select: none;
     -o-user-select: none;
+}
+
+.play-grid-cell-outlined{
+    border: .5px solid rgba(0,0,0,0.2);
 }
 
 .play-grid-cell:hover{

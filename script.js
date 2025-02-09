@@ -2,7 +2,7 @@
 const gridArea = document.getElementById("play-grid");
 const gridSizeDisplay = document.getElementById("grid-size-display");
 
-//Values for grid
+//Values for grid, default size 32
 let gridSize = 32;
 
 //Control buttons and inputs
